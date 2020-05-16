@@ -94,7 +94,7 @@ body {
   }
 
   #menu-item:hover #especialidades-item:hover, #map-tile:hover{
-    box-shadow: 0 1px 5px #ccccc;
+    box-shadow: 0 1px 5px #cccccc;
     }
 
     #menu-item{
@@ -120,6 +120,20 @@ body {
     }
   /* extra large */
   
+    .painel-rodape section{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .painel-rodape section:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .painel-rodape section hr {
+        width: 50%;
+
+    }
+
   @media (min-width: 1200px) {
     .container .jumbotron{
         background: url("../images/jumbotron_1200.jpg") no-repeat;
@@ -254,5 +268,16 @@ body {
     .container .jumbotron{
         padding: 0;
         margin-top: 15px;
+    }
+    #menu-item, #especialidades-item{
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+  }
+
+  @media (max-width: 575px){
+    #menu-item, #especialidades-item{
+        width: 280px;
+        margin: 0 auto 15px;
     }
   }
